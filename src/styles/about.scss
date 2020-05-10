@@ -48,6 +48,7 @@ img {
 
     @media (max-width: 770px) {
         height: 35%;
+        width: 100%;
     }
 
     img { 
@@ -87,7 +88,7 @@ img {
     box-sizing: border-box;
 
     @media (max-width: 770px) {
-        height: 40%;
+        height: 60%;
         width: 90%;
     }
 
@@ -103,7 +104,7 @@ img {
         }
 
         @media (max-width: 770px) {
-            font-size: 14px;
+            font-size: 12px;
         }
 
         a {
