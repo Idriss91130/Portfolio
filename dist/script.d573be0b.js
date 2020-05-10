@@ -118,40 +118,17 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"js/script.js":[function(require,module,exports) {
-document.getElementsByTagName('button')[0].onclick = function () {
-  console.log("coucou");
-  scrollTo(document.documentElement, 0, 800);
-};
+function disableScroll(e) {
+  if (e.keyCode) {
+    /^(32|33|34|35|36|38|40)$/.test(e.keyCode) && e.preventDefault();
+  } else {
+    e.preventDefault();
+  }
+}
 
-function scrollTo(element, to, duration) {
-  var start = element.scrollTop,
-      change = to - start,
-      currentTime = 0,
-      increment = 20;
-
-  var animateScroll = function animateScroll() {
-    currentTime += increment;
-    var val = Math.easeInOutQuad(currentTime, start, change, duration);
-    element.scrollTop = val;
-
-    if (currentTime < duration) {
-      setTimeout(animateScroll, increment);
-    }
-  };
-
-  animateScroll();
-} //t = current time
-//b = start value
-//c = change in value
-//d = duration
-
-
-Math.easeInOutQuad = function (t, b, c, d) {
-  t /= d / 2;
-  if (t < 1) return c / 2 * t * t + b;
-  t--;
-  return -c / 2 * (t * (t - 2) - 1) + b;
-};
+addEventListener("mousewheel", disableScroll, false);
+addEventListener("DOMMouseScroll", disableScroll, false);
+addEventListener("keydown", disableScroll, false);
 },{}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -180,7 +157,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52269" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51751" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
