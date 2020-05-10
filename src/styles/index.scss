@@ -52,6 +52,12 @@ img {
     justify-content: space-evenly;
     text-align: right;
 
+    @media (max-width: 1030px) {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
     h1 {
         padding-right: 150px;
         width: 100%;
@@ -62,6 +68,14 @@ img {
         color: #FFFFFF;
         animation-name: apparition;
         animation-duration: 1s;
+
+        @media (max-width: 1030px) {
+            padding: 0px;
+        }
+
+        @media (max-width: 400px) {
+            font-size: 50px;
+        }
       }
 
     p {
@@ -73,6 +87,22 @@ img {
         color: #FFFFFF;
         animation-name: apparition;
         animation-duration: 2.5s;
+
+        @media (max-width: 1380px) {
+            font-size: 40px;
+        }
+
+        @media (max-width: 1240px) {
+            font-size: 30px;
+        }
+
+        @media (max-width: 1030px) {
+            font-size: 25px;
+        }
+
+        @media (max-width: 1030px) {
+            padding-right: 0px;
+        }
     }
 
     .scroll-down {

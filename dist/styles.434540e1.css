@@ -47,6 +47,13 @@ img {
   justify-content: space-evenly;
   text-align: right;
 }
+@media (max-width: 1030px) {
+  .presentation {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+}
 .presentation h1 {
   padding-right: 150px;
   width: 100%;
@@ -58,6 +65,16 @@ img {
   animation-name: apparition;
   animation-duration: 1s;
 }
+@media (max-width: 1030px) {
+  .presentation h1 {
+    padding: 0px;
+  }
+}
+@media (max-width: 400px) {
+  .presentation h1 {
+    font-size: 50px;
+  }
+}
 .presentation p {
   width: 100%;
   padding-right: 150px;
@@ -67,6 +84,26 @@ img {
   color: #FFFFFF;
   animation-name: apparition;
   animation-duration: 2.5s;
+}
+@media (max-width: 1380px) {
+  .presentation p {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1240px) {
+  .presentation p {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1030px) {
+  .presentation p {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1030px) {
+  .presentation p {
+    padding-right: 0px;
+  }
 }
 .presentation .scroll-down {
   -webkit-animation: bounce 2s infinite 2s;
