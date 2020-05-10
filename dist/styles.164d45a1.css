@@ -1,0 +1,278 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: linear-gradient(to right, yellow, #79751c);
+  padding: 10px;
+}
+
+.background {
+  background-color: yellowgreen;
+  padding: 0 0 8px 0;
+}
+@media (min-aspect-ratio: 1/1) {
+  .background {
+    display: flex;
+    padding: 0 0 50px 0;
+  }
+}
+
+.identity {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px 0 15px;
+  padding: 5px 0 0 0;
+}
+.identity .identity__name p {
+  font-size: 10px;
+}
+.identity .identity__name h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.identity .identity__life {
+  display: flex;
+  align-items: center;
+}
+.identity .identity__life p {
+  color: red;
+  font-size: 24px;
+}
+
+.background2 {
+  background: linear-gradient(to right, yellow, #79751c);
+  padding: 5px;
+  margin: 0 15px;
+}
+
+.characteristics {
+  background: linear-gradient(to right, yellow, #79751c);
+  margin: 5px 25px 0 25px;
+  padding: 2px 0;
+}
+.characteristics p {
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+}
+
+.attack {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin: 45px 0;
+}
+.attack .attack__element {
+  display: flex;
+}
+.attack .attack__description {
+  flex-grow: 1;
+  margin: 0 30px;
+  width: 50%;
+}
+.attack .attack__description p {
+  text-align: justify;
+  font-size: 16px;
+  text-align: left;
+}
+.attack .attack__description em {
+  font-size: 18px;
+  font-weight: bold;
+}
+.attack .attack__puissance {
+  font-size: 24px;
+}
+
+.line {
+  background-color: black;
+  padding: 1px;
+  margin: 0 8px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3px;
+  margin: 0 5px;
+}
+.stats .stats__type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stats .stats__type h1 {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.background3 {
+  background: linear-gradient(to right, yellow, #79751c);
+  padding: 5px;
+  margin: 5px 5px 0 5px;
+}
+
+.details {
+  font-style: italic;
+  background: yellowgreen;
+}
+.details p {
+  font-size: 13px;
+  padding: 1px 5px;
+}
+
+@media (min-aspect-ratio: 1/1) {
+  .disposition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (min-aspect-ratio: 1/1) {
+  .disposition2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/*# sourceMappingURL=/styles.164d45a1.css.map */
