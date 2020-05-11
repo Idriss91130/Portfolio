@@ -55,6 +55,8 @@ body {
   background-size: cover;
   width: 100%;
   height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 img {
@@ -65,6 +67,13 @@ img {
   display: flex;
   justify-content: center;
   height: 100%;
+  width: 100%;
+}
+@media (max-width: 1170px) {
+  .projets {
+    flex-direction: column;
+    height: 90%;
+  }
 }
 
 .projet {
@@ -76,6 +85,13 @@ img {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1170px) {
+  .projet {
+    width: 100%;
+    height: 50%;
+    transform: skew(0);
+  }
+}
 .projet .link {
   height: 30%;
   display: flex;
@@ -86,15 +102,36 @@ img {
   transition: ease 0.3s;
   transform: skew(-10deg);
 }
+@media (max-width: 1170px) {
+  .projet .link {
+    transform: skew(0);
+  }
+}
 .projet .link:hover {
   transform: skew(10deg);
+}
+@media (max-width: 1170px) {
+  .projet .link:hover {
+    transform: skew(0);
+  }
 }
 .projet .link img {
   width: 100px;
   height: 100px;
 }
+@media (max-width: 1170px) {
+  .projet .link img {
+    width: 70px;
+    height: 70px;
+  }
+}
 .projet .link .gourde {
   width: 60px;
+}
+@media (max-width: 1170px) {
+  .projet .link .gourde {
+    width: 50px;
+  }
 }
 .projet .link h1 {
   width: 100%;
@@ -102,13 +139,24 @@ img {
   font-family: Montserrat-Regular;
   font-style: normal;
   font-size: 19px;
+  line-height: 22px;
   color: #000000;
+}
+@media (max-width: 1170px) {
+  .projet .link h1 {
+    font-size: 15px;
+  }
 }
 .projet .link p {
   font-family: Montserrat-Light;
   font-style: normal;
   font-size: 16px;
   color: #000000;
+}
+@media (max-width: 1170px) {
+  .projet .link p {
+    font-size: 12px;
+  }
 }
 .projet .link .text-jeu {
   color: white;
