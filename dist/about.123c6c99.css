@@ -90,7 +90,7 @@ img {
 }
 @media (max-width: 770px) {
   .presentation_text {
-    height: 60%;
+    height: 65%;
     width: 90%;
   }
 }
@@ -123,6 +123,7 @@ img {
   justify-content: space-around;
   font-family: Montserrat-Regular;
   font-size: 16px;
+  line-height: 25px;
   color: white;
   align-self: flex-end;
 }
