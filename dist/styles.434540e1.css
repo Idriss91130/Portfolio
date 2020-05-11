@@ -120,6 +120,11 @@ img {
   background-image: url(/background.09622968.svg);
   background-size: cover;
 }
+@media (max-width: 1170px) {
+  .menu {
+    flex-direction: column;
+  }
+}
 .menu .about {
   transform: skew(-10deg);
   background: #363636;
@@ -131,10 +136,22 @@ img {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1170px) {
+  .menu .about {
+    width: 100%;
+    transform: skew(0);
+    height: 90%;
+  }
+}
 .menu .about img {
   width: 100px;
   height: 100px;
   transform: skew(10deg);
+}
+@media (max-width: 1170px) {
+  .menu .about img {
+    transform: skew(0);
+  }
 }
 .menu .about h2 {
   transform: skew(10deg);
@@ -145,6 +162,11 @@ img {
   line-height: 35px;
   font-variant: small-caps;
   color: #FFFFFF;
+}
+@media (max-width: 1170px) {
+  .menu .about h2 {
+    transform: skew(0);
+  }
 }
 .menu .creation {
   transform: skew(-10deg);
@@ -157,10 +179,22 @@ img {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1170px) {
+  .menu .creation {
+    width: 100%;
+    transform: skew(0);
+    height: 90%;
+  }
+}
 .menu .creation img {
   width: 100px;
   height: 100px;
   transform: skew(10deg);
+}
+@media (max-width: 1170px) {
+  .menu .creation img {
+    transform: skew(0);
+  }
 }
 .menu .creation h2 {
   transform: skew(10deg);
@@ -172,6 +206,11 @@ img {
   font-variant: small-caps;
   color: #FFFFFF;
 }
+@media (max-width: 1170px) {
+  .menu .creation h2 {
+    transform: skew(0);
+  }
+}
 .menu .contain {
   display: flex;
   flex-direction: column;
@@ -180,6 +219,11 @@ img {
   text-decoration: none;
   filter: blur(3px);
   transition: ease 0.5s;
+}
+@media (max-width: 1170px) {
+  .menu .contain {
+    filter: blur(0);
+  }
 }
 .menu .contain:hover {
   filter: blur(0px);

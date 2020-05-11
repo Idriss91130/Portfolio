@@ -120,6 +120,10 @@ img {
     justify-content: center;
     background-image: url(/img/background.svg);
     background-size: cover;
+
+    @media (max-width: 1170px) {
+        flex-direction: column;
+    }
     
 
     .about {
@@ -133,10 +137,21 @@ img {
         align-items: center;
         justify-content: center;
 
+        @media (max-width: 1170px) {
+            width: 100%;
+            transform: skew(0);
+            height: 90%;
+        }
+
         img {
             width: 100px;
             height: 100px;
             transform: skew(10deg);
+
+            @media (max-width: 1170px) {
+                transform: skew(0);
+            }
+    
         }
 
         h2 {
@@ -148,6 +163,10 @@ img {
             line-height: 35px;
             font-variant: small-caps;
             color: #FFFFFF;
+
+            @media (max-width: 1170px) {
+                transform: skew(0);
+            }
         }
     }
 
@@ -162,10 +181,21 @@ img {
         align-items: center;
         justify-content: center;
 
+        @media (max-width: 1170px) {
+            width: 100%;
+            transform: skew(0);
+            height: 90%;
+        }
+
+
         img {
             width: 100px;
             height: 100px;
             transform: skew(10deg);
+
+            @media (max-width: 1170px) {
+                transform: skew(0);
+            }
         }
 
         h2 {
@@ -177,6 +207,10 @@ img {
             line-height: 35px;
             font-variant: small-caps;
             color: #FFFFFF;
+
+            @media (max-width: 1170px) {
+                transform: skew(0);
+            }
         }
     }
 
@@ -188,6 +222,10 @@ img {
         text-decoration: none;
         filter: blur(3px);
         transition: ease 0.5s;
+
+        @media (max-width: 1170px) {
+            filter: blur(0);
+        }
 
         &:hover {
             filter: blur(0px);
